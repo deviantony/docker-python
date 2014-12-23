@@ -9,5 +9,4 @@ RUN pip install tox virtualenvwrapper
 RUN echo "export WORKON_HOME=/envs" >> ~/.zshrc
 RUN echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.zshrc
 RUN /bin/zsh -c 'source ~/.zshrc; mkvirtualenv --python=/usr/bin/python2.6 python2.6'
-RUN /bin/zsh -c 'source ~/.zshrc; mkvirtualenv --python=/usr/bin/python2.7 python2.7'
 RUN /bin/zsh -c 'source ~/.zshrc; mkvirtualenv --python=/usr/bin/python3.4 python3'
